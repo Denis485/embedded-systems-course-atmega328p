@@ -107,11 +107,11 @@ int main(void)
 
         if(p1)
         {
-            GPIO_Write(LED_POT1, GPIO_HIGH);   
+            GPIO_Write(LED_POT3, GPIO_HIGH);   
         }
         else
         {
-            GPIO_Write(LED_POT1, GPIO_LOW);    
+            GPIO_Write(LED_POT3, GPIO_LOW);    
         }
 
         if(p2)
@@ -125,11 +125,11 @@ int main(void)
 
         if(p3)
         {
-            GPIO_Write(LED_POT3, GPIO_HIGH);   
+            GPIO_Write(LED_POT1, GPIO_HIGH);   
         }
         else
         {
-            GPIO_Write(LED_POT3, GPIO_LOW);    
+            GPIO_Write(LED_POT1, GPIO_LOW);    
         }
 
         if ((senzor && pot_gresit) || senzor_vibratie)
