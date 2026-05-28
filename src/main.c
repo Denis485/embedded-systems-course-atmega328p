@@ -1,21 +1,25 @@
 #include "drivers/gpio/gpio.h"
-#include "drivers/timer/timer0.h"
+#include "utils/delay.h"
 #include "bsp/nano.h"
 
 int main(void) {
-    
-    Timer0_Init();
+// test de IR SENSOR
+    GPIO_Init(D7, GPIO_INPUT);     
+    GPIO_Init(D4, GPIO_OUTPUT);    
 
-    
-    GPIO_Init(LED_BUILTIN, GPIO_OUTPUT);
+    GPIO_Write(D4, GPIO_LOW);     
 
-    uint32_t last_time = 0;
-
-    while (1) {
-            
-        if (Millis() - last_time >= 1000) {
-            last_time = Millis();
-            GPIO_Toggle(LED_BUILTIN);
+    while (1)
+    {
+        if (GPIO_Read(D7) == 0)
+        {
+            GPIO_Write(D4, GPIO_HIGH);   
         }
+        else
+        {
+            GPIO_Write(D4, GPIO_LOW);    
+        }
+
+        Delay(20);
     }
 }
