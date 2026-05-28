@@ -5,8 +5,13 @@
 
 #define POT1_X 600
 #define POT1_Y 800
+<<<<<<< HEAD
 #define POT2_X 202
 #define POT2_Y 400
+=======
+#define POT2_X 200
+#define POT2_Y 400   
+>>>>>>> d4fd6bf1b8e88ed6cec62f83ede20cc0dd6b96fe
 #define POT3_X 800
 #define POT3_Y 1000
 
@@ -14,7 +19,11 @@ int pot(int x) //functie pentru citirea valorii de la potentiometru x=1 selectea
                 // x=2 selecteaza potentiometrul 2 x=3 selecteaza potentiometrul 3
 {
     uint16_t pot_value = 0;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d4fd6bf1b8e88ed6cec62f83ede20cc0dd6b96fe
     if (x == 1)
     {
         pot_value = ADC_Read(0);
@@ -39,7 +48,11 @@ int pot(int x) //functie pentru citirea valorii de la potentiometru x=1 selectea
         else
             return 0;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d4fd6bf1b8e88ed6cec62f83ede20cc0dd6b96fe
     return 0;
 }
 void Buzzer_Beep(uint16_t duration_ms)
@@ -58,11 +71,19 @@ void Buzzer_Beep(uint16_t duration_ms)
 
 int main(void)
 {
+<<<<<<< HEAD
     GPIO_Init(D4, GPIO_INPUT);
     GPIO_Write(D4, GPIO_HIGH);
 
     GPIO_Init(D7, GPIO_OUTPUT);
     GPIO_Write(D7, GPIO_LOW);
+=======
+    GPIO_Init(D4, GPIO_INPUT);     
+    GPIO_Write(D4, GPIO_HIGH);    
+
+    GPIO_Init(D7, GPIO_OUTPUT);    
+    GPIO_Write(D7, GPIO_LOW);     
+>>>>>>> d4fd6bf1b8e88ed6cec62f83ede20cc0dd6b96fe
 
     while (1)
     {
