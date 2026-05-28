@@ -5,7 +5,7 @@
 
 #define POT1_X 600
 #define POT1_Y 800
-#define POT2_X 200
+#define POT2_X 202
 #define POT2_Y 400   
 #define POT3_X 800
 #define POT3_Y 1000
