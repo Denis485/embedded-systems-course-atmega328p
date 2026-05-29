@@ -6,29 +6,16 @@
 #include "bsp/nano.h" 
 #include "utils/delay.h"
 
-<<<<<<< Updated upstream
-#define POT1_X 600
-#define POT1_Y 800
-
-#define POT2_X 200
-#define POT2_Y 400   
-
-#define POT3_X 800
-#define POT3_Y 1000
-=======
 uint8_t POT1_VALOARE = 175;  // aproximativ 700 / 4
 uint8_t POT2_VALOARE = 75;   // aproximativ 300 / 4
 uint8_t POT3_VALOARE = 225;  // aproximativ 900 / 4
->>>>>>> Stashed changes
 
 #define IR_SENZOR D4
 #define VIBRATIE_SENZOR D3
 #define BUZZER D7
 #define BUTON D2
-
 #define LED_VERDE D5
 #define LED_ROSU D6
-
 #define LED_POT1 D10
 #define LED_POT2 D11
 #define LED_POT3 D12
