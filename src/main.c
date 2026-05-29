@@ -5,7 +5,7 @@
 #include "bsp/nano.h" 
 #include "utils/delay.h"
 
-#define POT1_X 602
+#define POT1_X 600
 #define POT1_Y 800
 
 #define POT2_X 200
